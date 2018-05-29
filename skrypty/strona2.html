@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Death Star under construction</title>
+<link rel="stylesheet" type="text/css" href="theme.css"/>
+
+<script>
+var pytanie=1;
+var prawidlowe=0;
+var pyt2="Pytanie 2: Kto był mężem księżniczki Leii?";
+var odp2a="Han Solo";
+var odp2b="Luke Skywalker";
+var odp2c="Chewbacca";
+var odp2d="Darth Vader";
+var pyt3="Pytanie 3: Co to jest ronto?";
+var odp3a="Rondo dla śmigaczy";
+var odp3b="Płyn do czyszczenia robotów";
+var odp3c="Dziki stwór";
+var odp3d="Radioaktywny pierwiastek";
+var pyt4="Pytanie 4: Jak się nazywają Internety w Star Wars?";
+var odp4a="Skynet";
+var odp4b="Jedinet";
+var odp4c="Droidnet";
+var odp4d="Holonet";
+var pyt5="Ostatnie pytanie (dla hardkorów) (no prawie): W którym roku miała miejsce Bitwa o Yavin?";
+var odp5a="0 ABY";
+var odp5b="32 ATC";
+var odp5c="19 BBY";
+var odp5d="5 BTC";
+var wyn = new Array();
+
+wyn[0]="noobem";
+wyn[1]="szczurem womp";
+wyn[2]="banthą";
+wyn[3]="Tuskenem";
+wyn[4]="Jedi";
+wyn[5]="Imperatorem";
+function win(){
+document.getElementById("title").innerHTML+="Gratulacje! Otrzymałeś "+prawidlowe+" punktów!<br> Patrząc na twoją wiedzę o gwiezdnych wojnach, mogę stwierdzić, że jesteś "+wyn[prawidlowe]+"!";
+document.getElementById("buthans").innerHTML="";
+}
+function first(){
+	switch(pytanie)
+	{
+		case 1:
+			document.getElementById("title").innerHTML="Prawidłowa odpowiedź. Dostajesz punkt ciemnej strony.<br>"+pyt2;
+			document.getElementById("a").innerHTML=odp2a;
+			document.getElementById("b").innerHTML=odp2b;
+			document.getElementById("c").innerHTML=odp2c;
+			document.getElementById("d").innerHTML=odp2d;
+			break;
+		case 2:
+			document.getElementById("title").innerHTML="Dobrze! Ale darmowe nagrody się skończyły.<br>"+pyt3;
+			document.getElementById("a").innerHTML=odp3a;
+			document.getElementById("b").innerHTML=odp3b;
+			document.getElementById("c").innerHTML=odp3c;
+			document.getElementById("d").innerHTML=odp3d;
+			prawidlowe=prawidlowe+1;
+			break;
+		case 3:
+			document.getElementById("title").innerHTML="Ronto to jednak co innego.<br>"+pyt4;
+			document.getElementById("a").innerHTML=odp4a;
+			document.getElementById("b").innerHTML=odp4b;
+			document.getElementById("c").innerHTML=odp4c;
+			document.getElementById("d").innerHTML=odp4d;
+			break;
+		case 4:
+			document.getElementById("title").innerHTML="Nie, to nie Matrix.<br>"+pyt5;
+			document.getElementById("a").innerHTML=odp5a;
+			document.getElementById("b").innerHTML=odp5b;
+			document.getElementById("c").innerHTML=odp5c;
+			document.getElementById("d").innerHTML=odp5d;
+			break;
+		case 5:
+			document.getElementById("title").innerHTML="Przyznaj, domyśliłeś się, czy wiedziałeś?<br>";
+			prawidlowe+=1;
+			win();
+	}
+	pytanie=pytanie+1;
+}
+function second(){
+	switch(pytanie)
+	{
+		case 1:
+			document.getElementById("title").innerHTML="Prawidłowa odpowiedź. Dostajesz dwa punkty metalu.<br>"+pyt2;
+			document.getElementById("a").innerHTML=odp2a;
+			document.getElementById("b").innerHTML=odp2b;
+			document.getElementById("c").innerHTML=odp2c;
+			document.getElementById("d").innerHTML=odp2d;
+			prawidlowe=prawidlowe+1;
+			break;
+		case 2:
+			document.getElementById("title").innerHTML="Jak mogłeś? To jego siostra!.<br>"+pyt3;
+			document.getElementById("a").innerHTML=odp3a;
+			document.getElementById("b").innerHTML=odp3b;
+			document.getElementById("c").innerHTML=odp3c;
+			document.getElementById("d").innerHTML=odp3d;
+			break;
+		case 3:
+			document.getElementById("title").innerHTML="Chyba chodziło ci o Pronto...<br>"+pyt4;
+			document.getElementById("a").innerHTML=odp4a;
+			document.getElementById("b").innerHTML=odp4b;
+			document.getElementById("c").innerHTML=odp4c;
+			document.getElementById("d").innerHTML=odp4d;
+			break;
+		case 4:
+			document.getElementById("title").innerHTML="Śmiesznie by było, ale to nie oni go wynaleźli.<br>"+pyt5;
+			document.getElementById("a").innerHTML=odp5a;
+			document.getElementById("b").innerHTML=odp5b;
+			document.getElementById("c").innerHTML=odp5c;
+			document.getElementById("d").innerHTML=odp5d;
+			break;
+		case 5:
+			document.getElementById("title").innerHTML="Jesteś niedomyślny albo nic nie wiesz.<br>";
+			win();
+	}
+	pytanie=pytanie+1;
+}
+function third(){
+	switch(pytanie)
+	{
+		case 1:
+			document.getElementById("title").innerHTML="Zła odpowiedź. Tracisz 1 mln punktów Jasnej Strony.<br>"+pyt2;
+			document.getElementById("a").innerHTML=odp2a;
+			document.getElementById("b").innerHTML=odp2b;
+			document.getElementById("c").innerHTML=odp2c;
+			document.getElementById("d").innerHTML=odp2d;
+			break;
+		case 2:
+			document.getElementById("title").innerHTML="Prawie, ale jednak źle.<br>"+pyt3;
+			document.getElementById("a").innerHTML=odp3a;
+			document.getElementById("b").innerHTML=odp3b;
+			document.getElementById("c").innerHTML=odp3c;
+			document.getElementById("d").innerHTML=odp3d;
+			break;
+		case 3:
+			var extra="";
+			if(prawidlowe==2)
+			{
+				extra="Wszystkie odpowiedzi jak na razie poprawne!";
+			}
+			document.getElementById("title").innerHTML="Brawo! "+extra+"<br>"+pyt4;
+			document.getElementById("a").innerHTML=odp4a;
+			document.getElementById("b").innerHTML=odp4b;
+			document.getElementById("c").innerHTML=odp4c;
+			document.getElementById("d").innerHTML=odp4d;
+			prawidlowe+=1;
+			break;
+		case 4:
+			document.getElementById("title").innerHTML="Blisko, ale jednak nie.<br>"+pyt5;
+			document.getElementById("a").innerHTML=odp5a;
+			document.getElementById("b").innerHTML=odp5b;
+			document.getElementById("c").innerHTML=odp5c;
+			document.getElementById("d").innerHTML=odp5d;
+			break;
+		case 5:
+			document.getElementById("title").innerHTML="Jesteś niedomyślny albo nic nie wiesz.<br>";
+			win();
+	}
+	pytanie=pytanie+1;
+}
+function fourth(){
+	switch(pytanie)
+	{
+		case 1:
+			document.getElementById("title").innerHTML="Zła odpowiedź. Wisisz mi piątaka.<br>"+pyt2;
+			document.getElementById("a").innerHTML=odp2a;
+			document.getElementById("b").innerHTML=odp2b;
+			document.getElementById("c").innerHTML=odp2c;
+			document.getElementById("d").innerHTML=odp2d;
+			break;
+		case 2:
+			document.getElementById("title").innerHTML="Pewnie tak, ale nie o to chodziło.<br>"+pyt3;
+			document.getElementById("a").innerHTML=odp3a;
+			document.getElementById("b").innerHTML=odp3b;
+			document.getElementById("c").innerHTML=odp3c;
+			document.getElementById("d").innerHTML=odp3d;
+			break;
+		case 3:
+			document.getElementById("title").innerHTML="Może chodziło ci o stront?.<br>"+pyt4;
+			document.getElementById("a").innerHTML=odp4a;
+			document.getElementById("b").innerHTML=odp4b;
+			document.getElementById("c").innerHTML=odp4c;
+			document.getElementById("d").innerHTML=odp4d;
+			break;
+		case 4:
+			document.getElementById("title").innerHTML="Poprawna odpowiedź.<br>"+pyt5;
+			document.getElementById("a").innerHTML=odp5a;
+			document.getElementById("b").innerHTML=odp5b;
+			document.getElementById("c").innerHTML=odp5c;
+			document.getElementById("d").innerHTML=odp5d;
+			prawidlowe=prawidlowe+1;
+			break;
+		case 5:
+			document.getElementById("title").innerHTML="Jesteś niedomyślny albo nic nie wiesz.<br>";
+			win();
+	}
+	pytanie=pytanie+1;
+}
+function back(){
+ window.history.back();
+}
+</script>
+</head>
+<body>
+
+<h1 id="title">Quiz: Kto to jest Vader?</h1>
+
+<span id="buthans">
+
+<button class="buthany" id="a" type="button" onclick="first()">a) Twoj ojciec</button>
+<button class="buthany" id="b" type="button" onclick="second()">b) Zespół metalowy</button>
+<button class="buthany" id="c" type="button" onclick="third()">c) Lord Sithów</button>
+<button class="buthany" id="d" type="button" onclick="fourth()">d) Franek spod budki</button>
+
+
+</span>
+
+<br>
+<br>
+<br>
+<span id="back"><button class="buthany" type="button" style="vertical-align: middle" onclick="back()">powrót</button></span>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p class="ostronie">
+<a href="http://www.staszic.waw.pl">Strona sponsorska. XIV LO im. Stanisława Staszica w Warszawie.</a><br>
+This is a Star Wars fan website.<br>
+Copyright disclaimer: No images on this site belong to me unless stated otherwise. They belong to The Walt Disney Company.<br>
+I hereby declare that I, or anyone else shall ever take no monetary profit whatsoever from the websites in this domain that use copyrighted images.
+</p>
+
+</body>
+</html>

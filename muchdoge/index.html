@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>such webpage</title>
+<link rel="stylesheet" type="text/css" href="theme.css"/>
+</head>
+<body style="background-image:url('http://i.imgur.com/q7VKiiK.gif')">
+<script>
+alert("Cześć i chwała piesełowi!!!!!!!!!");
+//document.write("<h1>This is a heading</h1>");
+//document.write("<p>This is a paragraph</p>");
+function lol()
+{
+	if(document.getElementById("doge").innerHTML=="jestem piesełem") {
+		document.getElementById("doge").innerHTML="Pieseł w budowie";
+		document.getElementById("wiek").innerHTML="Do 15 kwietnia 2014";
+	}
+	else {
+		document.getElementById("doge").innerHTML="jestem piesełem";
+		document.getElementById("wiek").innerHTML="mam 2 lata";
+	}
+}
+function doge()
+{
+	window.location.href = "2048.php";
+}
+</script>
+<h1 id="doge">Pieseł w budowie</h1>
+<h2 id="wiek">Do 15 kwietnia 2014 r.</h2>
+<p>wow</p>
+
+<ul>
+<li><a href="http://www.staszic.waw.pl">so skool</a>
+<li><button type="button" onclick="lol()">much button</button>
+<li><button type="button" onclick="doge()">much button</button>
+</ul>
+</body>
+</html>

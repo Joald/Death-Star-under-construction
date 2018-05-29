@@ -1,0 +1,212 @@
+h1{
+text-align: center;
+text-decoration: none;
+color: #ffffff;
+padding: 10px;
+
+text-shadow: 10px 10px 10px #dddddd;
+font-family:"Arial", Arial, Verdana;
+}
+.tekstduzy{
+text-align: center;
+text-decoration: none;
+color: #ffffff;
+padding: 10px;
+
+text-shadow: 10px 10px 10px #dddddd;
+font-family:"Arial", Arial, Verdana;
+}
+p.czypodoba{
+text-decoration: none;
+color: #ffffff;
+padding: 10px;
+
+font-family:"Arial", Arial, Verdana;
+}
+ul{
+list-style:none;
+text-decoration: none;
+color: #ffffff;
+padding: 10px;
+text-shadow: 5px 5px 5px #dddddd;
+font-family:"Arial", Arial, Verdana;
+}
+.centeredtext{
+position:absolute;
+left:230px;
+right:230px;
+color: #ffffff;
+padding: 10px;
+text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+font-family:"Arial", Arial, Verdana;
+}
+.buthany {
+	-moz-box-shadow:inset 0px 0px 0px 0px #666f7a;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #666f7a;
+	box-shadow:inset 0px 0px 0px 0px #666f7a;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7c8894), color-stop(1, #000000));
+	background:-moz-linear-gradient(top, #7c8894 5%, #000000 100%);
+	background:-webkit-linear-gradient(top, #7c8894 5%, #000000 100%);
+	background:-o-linear-gradient(top, #7c8894 5%, #000000 100%);
+	background:-ms-linear-gradient(top, #7c8894 5%, #000000 100%);
+	background:linear-gradient(to bottom, #7c8894 5%, #000000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c8894', endColorstr='#000000',GradientType=0);
+	background-color:#7c8894;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:3px solid #393e45;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:32px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #02080f;
+}
+.buthany:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #7c8894));
+	background:-moz-linear-gradient(top, #000000 5%, #7c8894 100%);
+	background:-webkit-linear-gradient(top, #000000 5%, #7c8894 100%);
+	background:-o-linear-gradient(top, #000000 5%, #7c8894 100%);
+	background:-ms-linear-gradient(top, #000000 5%, #7c8894 100%);
+	background:linear-gradient(to bottom, #000000 5%, #7c8894 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#7c8894',GradientType=0);
+	background-color:#000000;
+}
+.buthany:active {
+	position:relative;
+	top:1px;
+}
+
+p a{
+color: #ffffff;
+padding: 10px;
+
+}
+.ostronie{
+text-decoration: none;
+color: #ffffff;
+padding: 0px;
+text-shadow: 5px 5px 5px #dddddd;
+text-align: center;
+font-family:"Arial", Arial, Verdana;
+background-color: darkblue;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+}
+body{
+color: #ffffff;
+background-image:url("znak.jpg");
+background-size:100%;
+height:100%;
+text-align: center;
+font-family:"Arial", Arial, Verdana;
+}
+html{
+height:100%;
+}
+.back{
+vertical-align: middle;
+}
+.pasek{
+margin: 0px auto;
+height: 20px;
+padding: 10px;
+background-color: #eee;
+width: 300px;
+color:#000000;
+text-align: center;
+font-family:"Arial", Arial, Verdana;
+}
+
+.pasek-zielony{
+float: left;
+height: 40px;
+margin: -10px;
+display: block;
+width: 11%;
+background-color: #3DDF4A;
+font-family:"Arial", Arial, Verdana;
+}
+div.lol{
+text-align: left;
+color: #ffffff;
+font-family: sans-serif;
+background-color: darkgreen;
+width: 210px;
+float: right;
+
+}
+div.login{
+text-align: left;
+color: #ffffff;
+font-family: sans-serif;
+background-color: darkgreen;
+width: 210px;
+float: left;
+
+padding: 10px;
+}
+
+div.licznik{
+text-align: left;
+color: #ffffff;
+font-family: sans-serif;
+background-color: darkgreen;
+width: 210px;
+float: left;
+clear:both;
+padding: 10px;
+}
+.cardf{
+width: 762px;position:absolute;
+    height: 572px;left:50px;
+background-image:url("Vader.png");
+}
+.cards{
+width: 768px;position:absolute;
+    height: 640px;left:50px;
+background-image:url("Galaxy.jpg");
+}
+.cardt{
+position:absolute;
+left:100px;
+width: 452px;
+    height: 504px;
+background-image:url("cos.png");
+}
+.ctext
+{
+    color: white;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+	font-family:impact;
+
+font-size: -webkit-xxx-large;
+}
+.user
+{
+height: 400px;
+padding:50px;
+color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+float:right;
+top:0;
+position:relative;
+}
